@@ -1,0 +1,5 @@
+build:
+  docker:
+    web: docker-compose.yaml
+run:
+  web: docker-compose pull docker-compose up -d docker-compose run --rm directus install --email email@example.com --password d1r3ctu5
