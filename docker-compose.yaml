@@ -4,16 +4,17 @@ networks:
   directus:
 
 services:
-  database:
+  mysql:
     image: mysql:5.7
-    volumes:
-      - dbdata:/var/lib/mysql
     environment:
-      - "MYSQL_ROOT_PASSWORD=f23f2f2"
-      - "MYSQL_DATABASE=directus"
-      - "MYSQL_USER=directus"
+      MYSQL_DATABASE: "directus"
+      MYSQL_USER: "directus"
+      MYSQL_PASSWORD: "directus"
+      MYSQL_ROOT_PASSWORD: "directus"
     ports:
-        - "33061:3306"
+      - "3306:3306"
+    networks:
+      - directus
 
   directus:
     image: directus/directus:v8-apache
