@@ -12,7 +12,7 @@ class CreateCollectionsPresetsTable extends AbstractMigration
         $table = $this->table('directus_collection_presets', ['signed' => false]);
 
         $table->addColumn('title', 'string', [
-            'limit' => 255,
+            'limit' => 190,
             'null' => true,
             'default' => null,
             'encoding' => 'utf8mb4'
