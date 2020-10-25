@@ -19,5 +19,5 @@ return [
         'charset' => 'utf8mb4',
         // Remove 'host' above when using sockets
         'socket' => '',
-    ]
+    ] 
 ];
