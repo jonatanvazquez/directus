@@ -1,3 +1,5 @@
+/vendor/*
+
 Icon
 .DS_Store
 *.log
@@ -64,4 +66,3 @@ public/cliserver.php
 
 # Cache generated while filesystem adapter
 /cache/*
-/vendor/*
